@@ -4,7 +4,7 @@
 #
 Name     : pypi-dj_database_url
 Version  : 1.0.0
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/ce/0e/a1f5811e0033279b01864fe7d5519f91660c475a19c47a1478d62c3f8c8f/dj-database-url-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ce/0e/a1f5811e0033279b01864fe7d5519f91660c475a19c47a1478d62c3f8c8f/dj-database-url-1.0.0.tar.gz
 Summary  : Use Database URLs in your Django Application.
