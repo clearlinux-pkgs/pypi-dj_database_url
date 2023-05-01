@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-dj_database_url
-Version  : 1.3.0
-Release  : 39
-URL      : https://files.pythonhosted.org/packages/39/b6/b80a3b18855d19c56b489334017e45319828d200a17927c5f26b69e77317/dj-database-url-1.3.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/39/b6/b80a3b18855d19c56b489334017e45319828d200a17927c5f26b69e77317/dj-database-url-1.3.0.tar.gz
+Version  : 2.0.0
+Release  : 40
+URL      : https://files.pythonhosted.org/packages/12/86/baa0420d364dc9b3d78198ff6a73c2f41d8997026ddb36615d07dbf4c472/dj-database-url-2.0.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/12/86/baa0420d364dc9b3d78198ff6a73c2f41d8997026ddb36615d07dbf4c472/dj-database-url-2.0.0.tar.gz
 Summary  : Use Database URLs in your Django Application.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -56,10 +56,10 @@ python3 components for the pypi-dj_database_url package.
 
 
 %prep
-%setup -q -n dj-database-url-1.3.0
-cd %{_builddir}/dj-database-url-1.3.0
+%setup -q -n dj-database-url-2.0.0
+cd %{_builddir}/dj-database-url-2.0.0
 pushd ..
-cp -a dj-database-url-1.3.0 buildavx2
+cp -a dj-database-url-2.0.0 buildavx2
 popd
 
 %build
@@ -67,15 +67,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680013868
+export SOURCE_DATE_EPOCH=1682972692
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
