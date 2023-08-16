@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-dj_database_url
-Version  : 2.0.0
-Release  : 40
-URL      : https://files.pythonhosted.org/packages/12/86/baa0420d364dc9b3d78198ff6a73c2f41d8997026ddb36615d07dbf4c472/dj-database-url-2.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/12/86/baa0420d364dc9b3d78198ff6a73c2f41d8997026ddb36615d07dbf4c472/dj-database-url-2.0.0.tar.gz
+Version  : 2.1.0
+Release  : 41
+URL      : https://files.pythonhosted.org/packages/f0/1d/91ca6ded2b97688bc0287240c916690b6ee7ce2fd5327ea83f847730f6ec/dj-database-url-2.1.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f0/1d/91ca6ded2b97688bc0287240c916690b6ee7ce2fd5327ea83f847730f6ec/dj-database-url-2.1.0.tar.gz
 Summary  : Use Database URLs in your Django Application.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -56,10 +56,10 @@ python3 components for the pypi-dj_database_url package.
 
 
 %prep
-%setup -q -n dj-database-url-2.0.0
-cd %{_builddir}/dj-database-url-2.0.0
+%setup -q -n dj-database-url-2.1.0
+cd %{_builddir}/dj-database-url-2.1.0
 pushd ..
-cp -a dj-database-url-2.0.0 buildavx2
+cp -a dj-database-url-2.1.0 buildavx2
 popd
 
 %build
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682972692
+export SOURCE_DATE_EPOCH=1692199157
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
