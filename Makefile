@@ -1,5 +1,5 @@
 PKG_NAME := pypi-dj_database_url
-URL = https://files.pythonhosted.org/packages/f0/1d/91ca6ded2b97688bc0287240c916690b6ee7ce2fd5327ea83f847730f6ec/dj-database-url-2.1.0.tar.gz
+URL = https://files.pythonhosted.org/packages/1a/48/51f398a47c197f584b3445de886986ddc40de18bdb6e168f325a8d2c7bca/dj_database_url-2.2.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
