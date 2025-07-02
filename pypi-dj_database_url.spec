@@ -6,10 +6,10 @@
 # autospec commit: 65cf152
 #
 Name     : pypi-dj_database_url
-Version  : 3.0.0
-Release  : 48
-URL      : https://files.pythonhosted.org/packages/81/c0/5d660bbe707c8bce8c9217c9af92345170c204e29005628dc57528b648d7/dj_database_url-3.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/81/c0/5d660bbe707c8bce8c9217c9af92345170c204e29005628dc57528b648d7/dj_database_url-3.0.0.tar.gz
+Version  : 3.0.1
+Release  : 49
+URL      : https://files.pythonhosted.org/packages/75/05/2ec51009f4ce424877dbd8ad95868faec0c3494ed0ff1635f9ab53d9e0ee/dj_database_url-3.0.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/75/05/2ec51009f4ce424877dbd8ad95868faec0c3494ed0ff1635f9ab53d9e0ee/dj_database_url-3.0.1.tar.gz
 Summary  : Use Database URLs in your Django Application.
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -51,17 +51,16 @@ Group: Default
 Requires: python3-core
 Provides: pypi(dj_database_url)
 Requires: pypi(django)
-Requires: pypi(typing_extensions)
 
 %description python3
 python3 components for the pypi-dj_database_url package.
 
 
 %prep
-%setup -q -n dj_database_url-3.0.0
-cd %{_builddir}/dj_database_url-3.0.0
+%setup -q -n dj_database_url-3.0.1
+cd %{_builddir}/dj_database_url-3.0.1
 pushd ..
-cp -a dj_database_url-3.0.0 buildavx2
+cp -a dj_database_url-3.0.1 buildavx2
 popd
 
 %build
@@ -69,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1748877029
+export SOURCE_DATE_EPOCH=1751468657
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
